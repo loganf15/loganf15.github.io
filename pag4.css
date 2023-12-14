@@ -1,0 +1,105 @@
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px;
+  background:rgba(255, 194, 222, 0.808) ;
+}
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background:  rgb(253, 225, 238) ;
+}
+
+.header h1 {
+  font-size: 50px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+h2{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(215, 130, 228)
+
+}
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: right;
+  width: 75%;
+ 
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: rgb(255, 194, 222);
+  width: 100%;
+  padding: 20px;
+  overflow:auto;
+   width:70%;
+  height:200px;
+
+}
+.photo{
+  float:right; 
+border:3px dashed rgb(215, 130, 228)
+
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color:  rgb(221, 173, 228);
+  padding: 20px;
+  margin-top: 20px;
+  width: 850px;
+ 
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
